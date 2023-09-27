@@ -1,1 +1,0 @@
-# academind-typescript-code-along
