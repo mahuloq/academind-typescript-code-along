@@ -14,6 +14,8 @@ export class ServersComponent implements OnInit {
   serverName = 'Test Server';
   serverCreated = false;
   servers = ['TestServer', 'TestServer2'];
+  showSecret = false;
+  log = [];
   // userName = '';
 
   constructor() {
@@ -38,4 +40,10 @@ export class ServersComponent implements OnInit {
   //   this.userName = (<HTMLInputElement>event.target).value;
   //   console.log(this.userName);
   // }
+
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    // this.log.push(this.log.length + 1);
+    this.log.push(new Date());
+  }
 }
